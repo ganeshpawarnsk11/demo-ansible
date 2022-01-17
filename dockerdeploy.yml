@@ -37,7 +37,7 @@
        dest: /root
        src: /root/dir1/demo-ansible/{{ item }}
      with_items:
-       - docketdeploy.yml
+       - dockerdeploy.yml
        - lightsail-containers-flask
    - name: Build Docker image from Dockerfile
      command: "{{ item }}"
